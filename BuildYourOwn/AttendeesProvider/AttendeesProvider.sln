@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AttendeesProvider", "src\AttendeesProvider\AttendeesProvider.fsproj", "{47477ADD-9CD0-4228-9B6B-E2222EC3C9DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47477ADD-9CD0-4228-9B6B-E2222EC3C9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47477ADD-9CD0-4228-9B6B-E2222EC3C9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47477ADD-9CD0-4228-9B6B-E2222EC3C9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47477ADD-9CD0-4228-9B6B-E2222EC3C9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7149E079-2BE4-4269-876E-15E3741199F7}
+	EndGlobalSection
+EndGlobal
