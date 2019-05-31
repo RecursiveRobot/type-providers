@@ -1,13 +1,15 @@
 RESTRICTION: == net45
 NUGET
   remote: https://www.nuget.org/api/v2
+    FSharp.Charting (2.1)
+      FSharp.Core (>= 4.0.0.1)
     FSharp.Core (4.6.2)
     FSharp.Data (3.1.1)
       FSharp.Core (>= 4.0.0.1)
     FSharp.Data.SqlClient (2.0.2)
       FSharp.Core (>= 4.1.18)
     FSharp.Text.RegexProvider (1.0)
-    Google.DataTable.Net.Wrapper (4.0.0-rc1)
+    Google.DataTable.Net.Wrapper (4.0)
     Newtonsoft.Json (12.0.2)
     SwaggerProvider (0.8.2)
       FSharp.Core (>= 4.0)

@@ -1,5 +1,6 @@
 framework:net45
 source https://www.nuget.org/api/v2
+nuget FSharp.Charting
 nuget FSharp.Data
 nuget fsharp.data.sqlclient
 nuget fsharp.text.regexprovider
