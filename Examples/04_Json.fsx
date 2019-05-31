@@ -9,4 +9,4 @@ type CharacterProvider = JsonProvider<Url>
 
 let characters = CharacterProvider.Load(Url)
 
-characters.Results.[0].Name
+// characters.Results.[0].Name

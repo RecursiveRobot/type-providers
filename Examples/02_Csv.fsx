@@ -9,9 +9,9 @@ type StockProvider = CsvProvider<"./data/StockPrices.csv">
 
 let prices = StockProvider.Load("./data/StockPrices.csv")
 
-let firstRow = prices.Rows |> Seq.head
+// let firstRow = prices.Rows |> Seq.head
 
-prices.Rows
-|> Seq.map (fun row -> (row.Date, row.Open, row.Close, row.High, row.Low))
-|> Chart.Candlestick
-|> Chart.Show
+// prices.Rows
+// |> Seq.map (fun row -> (row.Date, row.Open, row.Close, row.High, row.Low))
+// |> Chart.Candlestick
+// |> Chart.Show

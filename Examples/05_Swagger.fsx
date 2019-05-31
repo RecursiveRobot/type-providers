@@ -11,14 +11,14 @@ type PetStore = SwaggerProvider<Url>
 
 let store = PetStore()
 
-let id = 123L
+// let id = 123L
 
-let rufus = PetStore.Pet(Name = "Rufus", Id = Some(id))
+// let rufus = PetStore.Pet(Name = "Rufus", Id = Some(id))
 
-store.AddPet(rufus)
+// store.AddPet(rufus)
 
-let retrievedPet = store.GetPetById(id)
+// let retrievedPet = store.GetPetById(id)
 
-store.UpdatePet(PetStore.Pet(Id = Some(id), PhotoUrls = [|"https://www.photo.com"|]))
+// store.UpdatePet(PetStore.Pet(Id = Some(id), PhotoUrls = [|"https://www.photo.com"|]))
 
-let updatedPet = store.GetPetById(id)
+// let updatedPet = store.GetPetById(id)
