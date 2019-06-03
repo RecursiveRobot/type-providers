@@ -3,11 +3,11 @@
 open FSharp.Data
 
 [<Literal>]
-let Url = "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes"
+let Url = "https://en.wikipedia.org/wiki/List_of_Rick_and_Morty_episodes"
 
 type EpisodeProvider = HtmlProvider<Url>
 
 let episodes = EpisodeProvider.Load(Url)
 
-// episodes.Tables.``Series overview``.Rows
-// |> Seq.maxBy (fun row -> row.``Avg. U.S. viewers (millions)``.Split('[').[0] |> decimal)
+// episodes.Tables.``Season 1 (2013-14)``.Rows
+// |> Seq.maxBy (fun row -> row.``U.S. viewers (millions)``)

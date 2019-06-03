@@ -3,10 +3,19 @@
 open FSharp.Data
 
 [<Literal>]
-let Url = "https://rickandmortyapi.com/api/character/"
+let Url = "http://api.meetup.com/lambda-luminaries/events?status=past,upcoming"
 
-type CharacterProvider = JsonProvider<Url>
+type MeetupProvider = JsonProvider<Url>
 
-let characters = CharacterProvider.Load(Url)
+let meetups = MeetupProvider.Load(Url)
 
-// characters.Results.[0].Name
+// meetups
+// |> Seq.filter (fun a -> a.Name.Contains("F#"))
+// |> Seq.map (fun a -> (a.Name, a.LocalDate.ToShortDateString()))
+
+// [<Literal>]
+// let EventUrl = "http://api.meetup.com/lambda-luminaries/events/bgngtqyzjbnb/attendance"
+
+// type EventProvider = JsonProvider<EventUrl>
+
+// let attendance = EventProvider.Load(EventUrl)
