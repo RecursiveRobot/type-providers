@@ -9,5 +9,5 @@ type EpisodeProvider = HtmlProvider<Url>
 
 let episodes = EpisodeProvider.Load(Url)
 
-// episodes.Tables.``Season 1 (2013-14)``.Rows
-// |> Seq.maxBy (fun row -> row.``U.S. viewers (millions)``)
+episodes.Tables.``Season 1 (2013-14)``.Rows
+|> Seq.maxBy (fun row -> row.``U.S. viewers (millions)``)

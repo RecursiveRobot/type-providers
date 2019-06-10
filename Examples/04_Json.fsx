@@ -9,13 +9,13 @@ type MeetupProvider = JsonProvider<Url>
 
 let meetups = MeetupProvider.Load(Url)
 
-// meetups
-// |> Seq.filter (fun a -> a.Name.Contains("F#"))
-// |> Seq.map (fun a -> (a.Name, a.LocalDate.ToShortDateString()))
+meetups
+|> Seq.filter (fun a -> a.Name.Contains("F#"))
+|> Seq.map (fun a -> (a.Name, a.LocalDate.ToShortDateString()))
 
-// [<Literal>]
-// let EventUrl = "http://api.meetup.com/lambda-luminaries/events/bgngtqyzjbnb/attendance"
+[<Literal>]
+let EventUrl = "http://api.meetup.com/lambda-luminaries/events/bgngtqyzjbnb/attendance"
 
-// type EventProvider = JsonProvider<EventUrl>
+type EventProvider = JsonProvider<EventUrl>
 
-// let attendance = EventProvider.Load(EventUrl)
+let attendance = EventProvider.Load(EventUrl)
